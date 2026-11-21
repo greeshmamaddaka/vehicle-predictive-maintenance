@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  predictive-maintenance-app:
+    build: .
+    container_name: vehicle_predictive_maintenance
+    ports:
+      - "8501:8501"
+    restart: always
+    environment:
+      - PYTHONUNBUFFERED=1
